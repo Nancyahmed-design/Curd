@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p14</title>
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="w-75 py-4 mx-auto">
+        <label for="productName">productName:</label>
+        <input type="text" class="form-control my-2" id="productName">
+
+        <label for="productPrice">productPrice:</label>
+        <input type="number" class="form-control my-2" id="productPrice">
+
+        <label for="productCategory">productCategory:</label>
+        <input type="text" class="form-control my-2" id="productCategory">
+
+        <label for="productDesc">productDesc:</label>
+        <textarea type="text" class="form-control my-2" id="productDesc"></textarea>
+
+        <button onclick="addProduct()"  class="btn btn-info">Add Product</button>
+    </div>
+
+    <div class="w-75 py-3 mx-auto">
+        <table class="table">
+            <thead>
+            <th>Index</th>
+            <th>ProductName</th>
+            <th>ProductPrice</th>
+            <th>ProductCategory</th>
+            <th>ProductDesc</th>
+            <th>update</th>
+            <th>delete</th>
+            </thead>
+            <tbody id="demo">
+               
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
